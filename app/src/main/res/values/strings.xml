@@ -3,4 +3,14 @@
     <string name="ex1">Ex1</string>
     <string name="ex2">Ex2</string>
     <string name="ex3">Ex3</string>
+    <string name="lifecycle_title">Activity Lifecycle Demonstration</string>
+    <string name="lifecycle_instruction">Rotate device, press back, or switch apps to trigger
+        lifecycle events</string>
+    <string name="lifecycle_created">22060775S Fung Wai Ki onCreate</string>
+    <string name="lifecycle_started">22060775S Fung Wai Ki onStart</string>
+    <string name="lifecycle_resumed">22060775S Fung Wai Ki onResume</string>
+    <string name="lifecycle_paused">22060775S Fung Wai Ki onPause</string>
+    <string name="lifecycle_stopped">22060775S Fung Wai Ki onStop</string>
+    <string name="lifecycle_destroyed">22060775S Fung Wai Ki onDestroy</string>
+    <string name="go_back">Go Back</string>
 </resources>

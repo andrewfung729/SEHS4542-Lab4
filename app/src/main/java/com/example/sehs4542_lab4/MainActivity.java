@@ -26,22 +26,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button btnOpenRegisterForm = findViewById(R.id.btnOpenRegisterForm);
-        Button btnOpenCalculator = findViewById(R.id.btnOpenCalculator);
-        Button btnOpenLanguageSettings = findViewById(R.id.btnOpenLanguageSettings);
+        Button btnOpenLifecycle = findViewById(R.id.btnOpenLifecycle);
 
         btnOpenRegisterForm.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
             startActivity(intent);
         });
 
-        btnOpenCalculator.setOnClickListener(v -> {
-            // Intent intent = new Intent(MainActivity.this, CalculatorActivity.class);
-            // startActivity(intent);
-        });
-
-        btnOpenLanguageSettings.setOnClickListener(v -> {
-            // Intent intent = new Intent(MainActivity.this, LanguageSettingsActivity.class);
-            // startActivity(intent);
+        btnOpenLifecycle.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, LifecycleActivity.class);
+            startActivity(intent);
         });
     }
 }

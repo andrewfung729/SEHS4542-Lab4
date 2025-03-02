@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">SEHS4542-Lab4</string>
+    <string name="ex1">Ex1</string>
+    <string name="ex2">Ex2</string>
+    <string name="ex3">Ex3</string>
 </resources>

@@ -2,6 +2,8 @@ package com.example.sehs4542_lab4;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -54,42 +56,42 @@ public class LifecycleActivity extends AppCompatActivity {
         
         // Log onCreate event
         logLifecycleEvent("onCreate");
-        // showToast("onCreate() called");
+        // showToast(getString(R.string.lifecycle_created));
     }
     
     @Override
     protected void onStart() {
         super.onStart();
         logLifecycleEvent("onStart");
-        // showToast("onStart() called");
+        // showToast(getString(R.string.lifecycle_started));
     }
     
     @Override
     protected void onResume() {
         super.onResume();
         logLifecycleEvent("onResume");
-        showToast("onResume() called");
+        showToast(getString(R.string.lifecycle_resumed));
     }
     
     @Override
     protected void onPause() {
         super.onPause();
         logLifecycleEvent("onPause");
-        showToast("onPause() called");
+        showToast(getString(R.string.lifecycle_paused));
     }
     
     @Override
     protected void onStop() {
         super.onStop();
         logLifecycleEvent("onStop");
-        // showToast("onStop() called");
+        // showToast(getString(R.string.lifecycle_stopped));
     }
     
     @Override
     protected void onDestroy() {
         super.onDestroy();
         logLifecycleEvent("onDestroy");
-        showToast("onDestroy() called");
+        showToast(getString(R.string.lifecycle_destroyed));
     }
     
     @Override
@@ -110,9 +112,29 @@ public class LifecycleActivity extends AppCompatActivity {
     }
     
     /**
-     * Show a toast message
+     * Show a custom toast message
      */
     private void showToast(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        // Create custom toast
+        Toast toast = new Toast(getApplicationContext());
+        
+        // Set longer display duration
+        toast.setDuration(Toast.LENGTH_LONG);
+        
+        // Use custom layout
+        View view = LayoutInflater.from(this).inflate(R.layout.custom_toast, null);
+        
+        // Set title and details
+        TextView tvTitle = view.findViewById(R.id.tvToastTitle);
+        TextView tvDetails = view.findViewById(R.id.tvToastDetails);
+        
+        tvTitle.setText("Activity Lifecycle");
+        tvDetails.setText(message);
+        
+        // Set view for the toast (DO NOT set gravity - will be ignored in newer Android versions)
+        toast.setView(view);
+        
+        // Show toast
+        toast.show();
     }
 }

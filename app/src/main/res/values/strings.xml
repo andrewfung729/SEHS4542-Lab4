@@ -13,4 +13,18 @@
     <string name="lifecycle_stopped">22060775S Fung Wai Ki onStop</string>
     <string name="lifecycle_destroyed">22060775S Fung Wai Ki onDestroy</string>
     <string name="go_back">Go Back</string>
+    
+    <!-- Season Selector -->
+    <string name="season_selector_title">Select a Season</string>
+    <string name="season_spring">Spring photo</string>
+    <string name="season_summer">Summer photo</string>
+    <string name="season_autumn">Autumn photo</string>
+    <string name="season_winter">Winter photo</string>
+    
+    <!-- Season Detail -->
+    <string name="season_detail_format">Here is %s</string>
+    <string name="season_toast_spring">Spring is the season of rebirth and renewal!</string>
+    <string name="season_toast_summer">Summer is the season of warmth and abundant sunshine!</string>
+    <string name="season_toast_autumn">Autumn is the season of colorful leaves and harvest!</string>
+    <string name="season_toast_winter">Winter is the season of snow and serenity!</string>
 </resources>

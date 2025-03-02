@@ -27,6 +27,12 @@
         <activity
             android:name=".LifecycleActivity"
             android:exported="false" />
+        <activity
+            android:name=".SeasonSelectorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeasonDetailActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -2,7 +2,6 @@ package com.example.sehs4542_lab4;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -27,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnOpenRegisterForm = findViewById(R.id.btnOpenRegisterForm);
         Button btnOpenLifecycle = findViewById(R.id.btnOpenLifecycle);
+        Button btnOpenSeasonSelector = findViewById(R.id.btnOpenSeasonSelector);
 
         btnOpenRegisterForm.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
@@ -35,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
 
         btnOpenLifecycle.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, LifecycleActivity.class);
+            startActivity(intent);
+        });
+        
+        btnOpenSeasonSelector.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SeasonSelectorActivity.class);
             startActivity(intent);
         });
     }

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_season_selector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeasonSelectorActivity">
+
+    <TextView
+        android:id="@+id/tvSeasonTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Select a Season"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSpring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSeasonTitle"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#E8E8E8"
+        android:text="Spring photo"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnSummer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSpring"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#E8E8E8"
+        android:text="Summer photo"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnAutumn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSummer"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#E8E8E8"
+        android:text="Autumn photo"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnWinter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAutumn"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#E8E8E8"
+        android:text="Winter photo"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
